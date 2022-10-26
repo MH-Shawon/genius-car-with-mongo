@@ -31,16 +31,16 @@ const Checkout = () => {
                     <Form.Control type="name" value={user.displayName} placeholder="Name" required readOnly disabled />
                 </Form.Group>
                 <Form.Group className="mb-2" controlId="formGroupEmail">
-                    <Form.Control type="email" value={user.email} placeholder="Enter email" required readOnly disabled />
+                    <Form.Control type="email" name="email" value={user.email} placeholder="Enter email" required readOnly disabled />
                 </Form.Group>
                 <Form.Group className="mb-2" controlId="formGroupService" >
                     <Form.Control type="service" value={service.name} placeholder="Service" required readOnly/>
                 </Form.Group>
                 <Form.Group className="mb-2" controlId="formGroupAddress" >
-                    <Form.Control type="address" placeholder="Address" required autoComplete='off' />
+                    <Form.Control type="address" name="address" placeholder="Address" required autoComplete='off' />
                 </Form.Group>
                 <Form.Group className="mb-2" controlId="formGroupPhone" >
-                    <Form.Control type="phone" placeholder="Phone" required />
+                    <Form.Control type="phone" name="phone" placeholder="Phone" required />
                 </Form.Group>
                 <Button variant="primary" type="submit">
                     Place order
